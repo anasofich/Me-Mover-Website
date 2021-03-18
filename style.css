@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+
+:root {
+  --color-1: #49bdd5;
+  --color-2: #4977d5;
+  --color-3: #49d5a7;
+  --color-4: #ededed;
+
+  --font-1: "Open Sans", sans-serif;
+  --font-2: Kayak Regular;
+  --main-text-color: #111;
+}
+
+body {
+  font-family: var(--font-1);
+  background-color: white;
+  color: var(--main-text-color);
+}
+
+header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 2vw;
+  position: fixed;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#logo img {
+  max-width: 20%;
+}
+
+.navBar {
+  grid-area: nav;
+  color: #111;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+
+.navBar li {
+  text-decoration: none;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  list-style: none;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #111;
+}
+
+.navBar a:hover {
+  color: var(--color-1);
+}
+
+#title {
+  background-color: var(--color-1);
+  background: url(videos/mockup-video.mp4);
+  background-size: contain;
+  margin: -0.5rem;
+}
+
+#videobg {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.titleText {
+  position: absolute;
+  margin-top: -45rem;
+  left: 3rem;
+  z-index: 1;
+}
+
+.titleText h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.titleText p {
+  margin-top: -5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
