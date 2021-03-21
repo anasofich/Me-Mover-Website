@@ -80,12 +80,12 @@ header {
   object-position: center;
   z-index: -1;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .titleText {
   position: absolute;
-  margin-top: -45vw;
+  margin-top: -35vw;
   left: 3vw;
   z-index: 1;
 }
@@ -104,7 +104,7 @@ header {
 
 .signal {
   position: absolute;
-  margin-top: -25vh;
+  margin-top: -15vh;
   left: 46.5vw;
   font-weight: bold;
   color: var(--color-1);
@@ -323,6 +323,25 @@ header {
   max-width: 60%;
 }
 
+@media only screen and (max-width: 1320px) {
+  .signal {
+    margin-top: -13vh;
+  }
+}
+
+@media only screen and (max-width: 1227px) {
+  .signal {
+    margin-top: -13vh;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -45vw;
+    left: 3vw;
+    z-index: 1;
+  }
+}
+
 @media only screen and (max-width: 1145px) {
   #logo img {
     max-width: 80%;
@@ -422,5 +441,278 @@ header {
 
   .anywherePhoto img {
     max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #logo img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  /*HEADER*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 10rem;
+  }
+
+  #logo {
+    grid-area: logo;
+    margin: 0;
+  }
+
+  #logo img {
+    max-width: 20%;
+  }
+
+  .navBar ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /*TITLE*/
+
+  #videobg {
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -55vw;
+    left: 3vw;
+    z-index: 1;
+  }
+
+  .titleText h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .titleText p {
+    margin-top: -4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .signal {
+    position: absolute;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1021px) {
+  .signal {
+    position: absolute;
+    margin-top: -15vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+
+  /*WHAT IS #MEMOVIN*/
+
+  .wiPhoto {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  .wiText {
+    margin-top: 0rem;
+    margin-left: -2rem;
+    padding-right: 5rem;
+  }
+
+  /*THE PRODUCT*/
+  #theProduct p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .productPhotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .productPhotos img {
+    max-width: 30%;
+    margin: 2rem;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .navBar ul {
+    font-size: 1rem;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -75vw;
+    left: 3vw;
+    z-index: 1;
+  }
+
+  .titleText h1 {
+    font-size: 4.5rem;
+  }
+
+  .titleText p {
+    margin-top: -4rem;
+    font-size: 1.2rem;
+  }
+
+  .signal {
+    position: absolute;
+    margin-top: -15vh;
+    left: 42vw;
+  }
+
+  .arrow {
+    background-size: 4vw;
+    height: 4vw;
+    width: 4vw;
+    left: 5vw;
+  }
+
+  /*WHAT IS #MEMOVIN*/
+
+  .wiPhoto {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  .wiPhoto img {
+    max-width: 80%;
+  }
+
+  #anywhereSec .secTitle {
+    margin: 0;
+    margin-top: 8rem;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .anywhere {
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .navBar ul {
+    font-size: 0.8rem;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -65vw;
+    left: 3vw;
+    z-index: 1;
+  }
+
+  .titleText h1 {
+    font-size: 3.5rem;
+  }
+
+  .titleText p {
+    margin-top: -3rem;
+    font-size: 1.2rem;
+  }
+
+  .wiText {
+    margin-top: 0rem;
+    margin-left: -6rem;
+    padding-right: 1rem;
+  }
+  #theProduct p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: -1.5rem;
+  }
+
+  .navBar ul {
+    font-size: 0.8rem;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -75vw;
+    left: 3vw;
+    z-index: 1;
+  }
+
+  .titleText h1 {
+    font-size: 2.8rem;
+  }
+
+  .titleText p {
+    margin-top: -2rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+  }
+
+  .navBar ul {
+    font-size: 0.7rem;
+  }
+
+  .titleText {
+    position: absolute;
+    margin-top: -90vw;
+    left: 3vw;
+    z-index: 1;
+  }
+
+  .titleText h1 {
+    font-size: 2.8rem;
+  }
+
+  .titleText p {
+    margin-top: -2rem;
+    font-size: 1rem;
   }
 }
