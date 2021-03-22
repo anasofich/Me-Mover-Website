@@ -88,6 +88,7 @@ header {
   margin-top: -35vw;
   left: 3vw;
   z-index: 1;
+  color: var(--color-4);
 }
 
 .titleText h1 {
@@ -241,6 +242,35 @@ header {
 
 .wiText p {
   line-height: 2rem;
+}
+
+/*CAMPAIGN VIDEOS*/
+#campaignVideos {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-1);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#campaignVideos .secTitle {
+  color: white;
+  line-height: 1rem;
+}
+
+.CVScreen {
+  position: relative;
+  width: 58vw;
+  height: 32.6vw;
+  overflow: hidden;
+  align-self: center;
+  padding: 2rem;
+}
+
+.CVScreen iframe {
+  position: absolute;
+  width: 90%;
+  height: 90%;
 }
 
 /*THE PRODUCT*/
@@ -520,6 +550,14 @@ header {
   }
 }
 
+@media only screen and (max-width: 970px) {
+  #campaignVideos .secTitle {
+    color: white;
+    line-height: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   header {
     margin-left: 3rem;
@@ -556,6 +594,27 @@ header {
     max-width: 30%;
     margin: 2rem;
     align-self: center;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .titleText {
+    position: absolute;
+    margin-top: -65vw;
+    left: 3vw;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #campaignVideos .secTitle {
+    color: white;
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+
+  #campaignVideos .secTitle h3 {
+    margin-top: -2rem;
   }
 }
 
@@ -661,7 +720,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 465px) {
   header {
     margin: 0;
     margin-top: 1rem;
