@@ -592,7 +592,7 @@ header {
   }
 
   .productPhotos img {
-    max-width: 30%;
+    max-width: 70%;
     margin: 2rem;
     align-self: center;
   }
