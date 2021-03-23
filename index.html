@@ -14,22 +14,24 @@
     />
   </head>
   <body>
-    <header>
-      <div id="logo">
-        <a href="index.html"
-          ><img src="images/logo_black_small.svg" alt="logo"
-        /></a>
-      </div>
-      <nav class="navBar">
-        <ul>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">PRODUCTS</a></li>
-          <li><a href="#">#MEMOVIN</a></li>
-          <li><a href="#">COMMUNITY</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="headerWrapper">
+      <header>
+        <div id="logo">
+          <a href="index.html"
+            ><img src="images/logo_black_small.svg" alt="logo"
+          /></a>
+        </div>
+        <nav class="navBar">
+          <ul>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">#MEMOVIN</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main>
       <section id="title">
@@ -58,12 +60,12 @@
       </section>
 
       <section id="meetMeMover">
-        <div class="secTitle">
+        <div class="secTitle fade-in">
           <h2>MEET ME MOVER</h2>
         </div>
 
         <div class="iconGrid">
-          <div class="icon">
+          <div class="icon fade-in">
             <div class="rehabIcon"></div>
             <h3>IDEAL REHAB AND PREHAB TOOL</h3>
             <p>
@@ -72,7 +74,7 @@
             </p>
           </div>
 
-          <div class="icon">
+          <div class="icon fade-in">
             <div class="workoutIcon"></div>
             <h3>FULL-BODY FUNCTIONAL WORKOUT</h3>
             <p>
@@ -81,8 +83,8 @@
             </p>
           </div>
 
-          <div class="icon">
-            <div class="cardioIcon"></div>
+          <div class="icon fade-in">
+            <div class="cardioIcon" class="fade-in"></div>
             <h3>INTENSE AND EFFECTIVE CARDIO</h3>
             <p>
               Raises your heart rate instantly for endurance and stamina
@@ -90,7 +92,7 @@
             </p>
           </div>
 
-          <div class="icon">
+          <div class="icon fade-in">
             <div class="exerciseIcon"></div>
             <h3>FUN AND ENGAGING EXERCISE</h3>
             <p>
@@ -99,7 +101,7 @@
             </p>
           </div>
 
-          <div class="icon">
+          <div class="icon fade-in">
             <div class="timeIcon"></div>
             <h3>TIME EFFICIENT AND FLEXIBLE</h3>
             <p>
@@ -110,14 +112,14 @@
       </section>
 
       <section id="whatIs">
-        <div class="wiPhoto">
+        <div class="wiPhoto fade-in">
           <img
             src="images/fællesbillede-medium.webp"
             alt="me-mover-community"
           />
         </div>
 
-        <div class="wiText">
+        <div class="wiText fade-in">
           <div class="secTitle">
             <h2>WHAT IS <br />#MEMOVIN?</h2>
           </div>
@@ -137,11 +139,11 @@
       </section>
 
       <section id="campaignVideos">
-        <div class="secTitle">
+        <div class="secTitle fade-in">
           <h2>WATCH THE CAMPAIGN VIDEOS</h2>
           <h3>#MEMOVIN</h3>
         </div>
-        <div class="CVScreen">
+        <div class="CVScreen fade-in">
           <iframe
             width="560"
             height="315"
@@ -152,7 +154,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="CVScreen">
+        <div class="CVScreen fade-in">
           <iframe
             width="560"
             height="315"
@@ -166,25 +168,27 @@
       </section>
 
       <section id="theProduct">
-        <div class="secTitle">
+        <div class="secTitle fade-in">
           <h2>THE PRODUCT</h2>
         </div>
-        <p>
+        <p class="fade-in">
           A step machine on wheels, the Me-Mover activates 6 of 8 major muscle
           groups, so you get more exercise in less time. It is a full body
           trainer that gets you fit faster; high intensity workout, low impact
           and a blast to ride.
         </p>
         <div class="productPhotos">
-          <img src="images/Me-Mover2.3.png" alt="speed" />
-          <img src="images/Me-Mover-Speed.png" alt="speed" />
+          <img class="fade-in" src="images/Me-Mover2.3.png" alt="speed" />
+          <img class="fade-in" src="images/Me-Mover-Speed.png" alt="speed" />
         </div>
 
-        <button>SHOP</button>
+        <div class="fade-in">
+          <button>SHOP</button>
+        </div>
       </section>
 
       <section id="anywhereSec">
-        <div class="secTitle">
+        <div class="secTitle fade-in">
           <div class="outdoor">
             <h2>OUTDOOR,</h2>
             <h2>OFF-ROAD,</h2>
@@ -196,21 +200,21 @@
           </div>
         </div>
 
-        <div class="anywherePhoto">
+        <div class="anywherePhoto fade-in">
           <img src="images/jointhemovement-large.webp" alt="Memoverphoto" />
         </div>
       </section>
 
       <section id="the_benefits">
-        <h2>
+        <h2 class="fade-in">
           THE <br />
           BENEFITS
         </h2>
 
-        <div id="gradient"></div>
+        <div id="gradient" class="fade-in"></div>
 
         <div id="three_points">
-          <div class="point">
+          <div class="point fade-in">
             <h1>1</h1>
             <h2>MORE EXERCISE</h2>
             <p>
@@ -220,7 +224,7 @@
               muscle, and thus radically reducing your resting period.
             </p>
           </div>
-          <div class="point">
+          <div class="point fade-in">
             <h1>2</h1>
             <h2>MULTI-PURPOSE</h2>
             <p>
@@ -229,7 +233,7 @@
               home, or enjoy the Great Outdoors!
             </p>
           </div>
-          <div class="point">
+          <div class="point fade-in">
             <h1>3</h1>
             <h2>COMMUNITY & WORKOUT VIDEOS</h2>
             <p>
@@ -244,44 +248,48 @@
       </section>
 
       <section id="routeMap">
-        <h3 class="route_text">
+        <h3 class="route_text fade-in">
           FIND A NICE ROUTE TO TAKE <br />
           YOUR ME-MOVER FOR A RIDE
         </h3>
 
-        <img src="images/MicrosoftTeams-image (1).png" alt="illustrated map" />
+        <img
+          class="fade-in"
+          src="images/MicrosoftTeams-image (1).png"
+          alt="illustrated map"
+        />
       </section>
 
       <section id="workouts_routes">
-        <h4>
+        <h4 class="fade-in">
           WORKOUTS AND ROUTES <br />
           TO GET YOU INSPIRED
         </h4>
         <div id="tours">
-          <div>
+          <div class="fade-in">
             <img src="images/cphtour.png" alt="copenhagen" />
           </div>
-          <div>
+          <div class="fade-in">
             <img src="images/movefast.png" alt="elliptical workout" />
           </div>
-          <div>
+          <div class="fade-in">
             <img src="images/norrebro.png" alt="Nørrebro Copenhagen" />
           </div>
-          <div>
+          <div class="fade-in">
             <img src="images/recovery.png" alt="easy workout" />
           </div>
-          <div>
+          <div class="fade-in">
             <img src="images/lakes.png" alt="The Lakes Copenhagen" />
           </div>
-          <div>
+          <div class="fade-in">
             <img src="images/strong.png" alt="Hard workout" />
           </div>
         </div>
       </section>
 
       <section id="testimonials">
-        <h5>TESTIMONIALS</h5>
-        <div class="marquee">
+        <h5 class="fade-in">TESTIMONIALS</h5>
+        <div class="marquee fade-in">
           <a
             href="https://www.youtube.com/watch?v=nZOnRA1TXCA&list=PLNuJa4tOabJi0zHZ72mxOpgw1JAOHfPer&index=3"
             target="_blank"
@@ -299,7 +307,7 @@
         </div>
       </section>
 
-      <section id="movement">
+      <section id="movement" class="fade-in">
         <h5>JOIN THE MOVEMENT</h5>
         <p>
           Get the latest updates from Me-Mover, events happening around you,
@@ -319,8 +327,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="fade-in">
       <img src="images/footer.png" alt="company details" />
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

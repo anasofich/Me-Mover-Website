@@ -24,6 +24,14 @@ body {
 }
 
 /*HEADER*/
+#headerWrapper {
+  transition: all 1s;
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  position: fixed;
+  z-index: 2;
+}
 
 header {
   display: grid;
@@ -47,7 +55,7 @@ header {
 .navBar {
   grid-area: nav;
   color: #111;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 
 .navBar ul {
@@ -409,6 +417,7 @@ header {
   padding-right: 5rem;
   padding-bottom: 3rem;
   margin: 0;
+  text-align: center;
 }
 
 #workouts_routes h4 {
@@ -542,6 +551,23 @@ footer img {
   position: relative;
   z-index: -10;
   margin-top: -40px;
+}
+
+/*JAVASCRIPT THINGS*/
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.scrolled {
+  transition: all 1s;
+  background-color: var(--color-4);
+  box-shadow: 0px 3px 13px -7px #000000,
+    5px -1px 15px 5px rgba(198, 198, 198, 0.06);
 }
 
 /*MEDIA QUERIES*/
@@ -749,6 +775,14 @@ footer img {
     color: white;
     line-height: 1rem;
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  #tours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
