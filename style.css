@@ -141,11 +141,23 @@ header {
   font-weight: lighter;
 }
 
+#routeMap {
+  padding: 1rem;
+  text-align: center;
+}
+
 .route_text {
   font-size: 3.5rem;
   color: #49bdd5;
   font-weight: bold;
   font-style: italic;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+#routeMap img {
+  max-width: 100%;
+  align-self: center;
 }
 
 #workouts_routes {
@@ -274,18 +286,10 @@ footer img {
   align-self: center;
 }
 
-#map {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  border: 1.5px solid black;
-  max-width: 100%;
-}
-
 #gradient {
-  width: 100wv;
-  height: 40px;
-  background: linear-gradient(180deg, #49bdd5 50%, white 50%);
+  width: 80vw;
+  height: 20px;
+  background: linear-gradient(90deg, #49d5a7, white);
   position: relative;
   z-index: -10;
   margin-top: -40px;
