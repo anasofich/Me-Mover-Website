@@ -14,6 +14,7 @@
 html,
 body {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -566,7 +567,7 @@ footer img {
 
 @media only screen and (max-width: 1145px) {
   #logo img {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .signal {
@@ -818,6 +819,10 @@ footer img {
     margin-left: 2rem;
   }
 
+  #logo img {
+    max-width: 30%;
+  }
+
   .navBar ul {
     font-size: 1rem;
   }
@@ -907,11 +912,22 @@ footer img {
   header {
     margin: 0;
     margin-top: 1rem;
-    margin-left: 0.5rem;
+    margin-left: 8rem;
+  }
+
+  #logo {
+    grid-area: logo;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+  }
+
+  #logo img {
+    max-width: 45%;
   }
 
   .navBar ul {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .titleText {
@@ -941,15 +957,35 @@ footer img {
   }
 }
 
+@media only screen and (max-width: 525px) {
+  body {
+    margin-right: -15rem;
+  }
+
+  #videobg {
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 160vh;
+  }
+
+  .signal {
+    position: absolute;
+    margin-top: -16vh;
+    left: 66vw;
+  }
+}
+
 @media only screen and (max-width: 465px) {
   header {
     margin: 0;
     margin-top: 1rem;
-    margin-left: -1.5rem;
+    margin-left: 9rem;
   }
 
   .navBar ul {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .titleText {
@@ -969,15 +1005,21 @@ footer img {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 6vw;
+  }
+
 @media only screen and (max-width: 320px) {
   header {
     margin: 0;
     margin-top: 1rem;
-    margin-left: -2.5rem;
   }
 
   .navBar ul {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .titleText {
