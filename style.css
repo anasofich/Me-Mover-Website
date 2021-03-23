@@ -993,7 +993,7 @@ footer img {
 
 @media only screen and (max-width: 525px) {
   body {
-    margin-right: -15rem;
+    margin-right: 0;
   }
 
   #videobg {
@@ -1002,6 +1002,12 @@ footer img {
     z-index: -1;
     width: 100%;
     height: 160vh;
+  }
+
+  header {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 0;
   }
 
   .signal {
@@ -1015,7 +1021,6 @@ footer img {
   header {
     margin: 0;
     margin-top: 1rem;
-    margin-left: 9rem;
   }
 
   .navBar ul {
@@ -1043,7 +1048,6 @@ footer img {
   header {
     margin: 0;
     margin-top: 1rem;
-    margin-left: 6vw;
   }
 }
 
