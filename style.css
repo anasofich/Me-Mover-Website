@@ -96,3 +96,225 @@ header {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+#the_benefits {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#the_benefits h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+#three_points {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#three_points h1 {
+  font-size: 5rem;
+  color: #49d5a7;
+  opacity: 50%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#three_points h2 {
+  margin-top: -130px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.point {
+  width: 320px;
+}
+
+.point p {
+  line-height: 1.7rem;
+  font-weight: lighter;
+}
+
+.route_text {
+  font-size: 3.5rem;
+  color: #49bdd5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#workouts_routes {
+  background-color: #49bdd5;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  margin: 0;
+}
+
+#workouts_routes h4 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  text-align: right;
+  padding-top: 3rem;
+}
+
+#tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#tours img {
+  margin-bottom: 1.5rem;
+}
+
+#tours img:hover {
+  opacity: 50%;
+}
+
+#testimonials {
+  background-color: #ededed;
+  margin-top: -100px;
+}
+
+#testimonials h5 {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.marquee {
+  display: flex;
+  overflow-x: auto;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+}
+
+.marquee img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  margin-right: 40px;
+}
+
+.marquee img:hover {
+  opacity: 50%;
+}
+
+#movement h5 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+#movement p {
+  margin-top: -70px;
+  line-height: 1.7rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  padding: 2rem;
+}
+
+form label {
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+button {
+  background-color: #707070;
+  color: white;
+  border-radius: 20px;
+  margin: 2rem;
+  outline: none;
+  width: 160px;
+  height: 35px;
+  border: none;
+  opacity: 80%;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+#form_container input {
+  width: 350px;
+  height: 20px;
+}
+
+footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+footer img {
+  min-width: 550px;
+  max-width: 550px;
+  align-self: center;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1.5px solid black;
+  max-width: 100%;
+}
+
+#gradient {
+  width: 100wv;
+  height: 40px;
+  background: linear-gradient(180deg, #49bdd5 50%, white 50%);
+  position: relative;
+  z-index: -10;
+  margin-top: -40px;
+}
+
+@media screen and (max-width: 550px) {
+  #the_benefits h2 {
+    font-size: 65px;
+  }
+
+  #three_points h2 {
+    font-size: 25px;
+    margin-top: -130px;
+  }
+
+  .route_text {
+    font-size: 40px;
+  }
+
+  #workouts_routes h4 {
+    font-size: 40px;
+  }
+
+  #tours img {
+    max-width: 300px;
+  }
+
+  #testimonials h5 {
+    font-size: 55px;
+    padding-left: 30px;
+  }
+}
